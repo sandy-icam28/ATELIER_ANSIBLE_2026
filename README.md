@@ -90,12 +90,12 @@ Faites preuve de pédagogie et soyez clair dans vos explications et procedures d
 **Question 1 :**  
 Pourquoi Ansible est-il qualifié d’outil "déclaratif" ?    
   
-*..Répondez à cet exercice ici..*
+Ansible est un outil déclaratif car on décrit l'état final souhaité et non les étapes pour y arriver et c'est Ansible qui applique les changements nécessaires. Cela repose sur le principe d’idempotence : exécuter plusieurs fois un playbook ne modifie pas le système.
 
 **Question 2 :**  
 Pourquoi l’utilisation de variables est-elle essentielle dans un playbook ?  
   
-*..Répondez à cet exercice ici..*
+L'utilisation de variables permet de gagner du temps : on modifie juste une valeur de variable et pas tout le code, ça évite donc le hardcoding.
 
 **Question 3 :**  
 En quoi Ansible facilite-t-il la gestion de plusieurs serveurs ?  
@@ -105,12 +105,17 @@ En quoi Ansible facilite-t-il la gestion de plusieurs serveurs ?
 **Question 4 :**  
 Quels sont les avantages et les limites d’Ansible dans un contexte DevOps ?   
   
-*..Répondez à cet exercice ici..*
+Avantages :
+  Syntaxe simple et facile à apprendre
+  Idempotence --> fiable et prévisible
+Limites :
+  Plus lent que certains outils
+  Debug parfois difficile
   
 **Question 5 :**  
 Quelle est la différence entre les modules copy et template dans Ansible ?   
   
-*..Répondez à cet exercice ici..*
+Ces deux modules servent à envoyer des fichiers sur les serveurs, mais copy sert à copier un fichier tel quel, sans traitement alors que template permet d'insérer des variables.
 
 ---------------------------------------------------
 Séquence 5 : Atelier  
