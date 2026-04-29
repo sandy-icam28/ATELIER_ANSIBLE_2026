@@ -1,6 +1,6 @@
 ---
 - name: Atelier Ansible avec gestion DEV / PROD
-  hosts: local
+  hosts: "{{ env }}"
   become: true
   gather_facts: true
 
